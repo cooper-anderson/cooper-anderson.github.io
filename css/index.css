@@ -1,0 +1,27 @@
+.pos-f-t {
+	/*margin-bottom: 24px;*/
+}
+
+.nav-link.active {
+	border-bottom: solid #0275d8;
+}
+
+.bg-inverse.p-4 {
+	padding-bottom: 12px !important;
+}
+
+.navbar-toggler {
+	cursor: pointer;
+	outline: none !important;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+iframe#main-area {
+	width: 100%;
+	height: 100%;
+}
