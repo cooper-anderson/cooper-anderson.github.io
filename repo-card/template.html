@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.css" />
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<style>
+	<!--style>
 		#star-button, #watch-button {
 			padding-left: 8px;
 			padding-right: 8px;
 		}
-	</style>
+	</style-->
 </head>
 <body>
-	<div class="card" style="width: 20rem;">
+	<div class="card text-white bg-dark" style="width: 20rem;">
 		<img class="card-img-top" src="../img/card.svg" alt="Card image cap">
-		<div class="card-block">
-			<h4 class="card-title"></h4>
-			<p class="card-text" style="height: 72px; overflow-y: scroll;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<!--div class="btn-group" role="group">
-				<a class="btn btn-primary" href="#" id="page-button" target="_top">Page</button>
-				<a class="btn btn-secondary" href="#" id="repo-button" target="_top">Repo</button>
-			</div-->
+		<div class="card-body">
+			<h4 class="card-title">Blockade</h4>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 			<a href="#" id="page-button" class="btn btn-primary" target="_top">Page</a>
 			<a href="#" id="repo-button" class="btn btn-primary" target="_top">Repo</a>
 			<a href="#" id="star-button" class="btn btn-secondary" target="_top" data-toggle="tooltip" data-placement="top" title="Stargazers"><span class="octicon octicon-star"></span> <span id="star-count"></span></a>
 			<a href="#" id="watch-button" class="btn btn-secondary" target="_top" data-toggle="tooltip" data-placement="top" title="Watchers"><span class="octicon octicon-eye"></span> <span id="watch-count"></span></a>
 		</div>
 	</div>
+	<!--div class="card" style="width: 20rem;">
+		<img class="card-img-top" src="../img/card.svg" alt="Card image cap">
+		<div class="card-block">
+			<h4 class="card-title"></h4>
+			<p class="card-text" style="height: 72px; overflow-y: scroll;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<a href="#" id="page-button" class="btn btn-primary" target="_top">Page</a>
+			<a href="#" id="repo-button" class="btn btn-primary" target="_top">Repo</a>
+			<a href="#" id="star-button" class="btn btn-secondary" target="_top" data-toggle="tooltip" data-placement="top" title="Stargazers"><span class="octicon octicon-star"></span> <span id="star-count"></span></a>
+			<a href="#" id="watch-button" class="btn btn-secondary" target="_top" data-toggle="tooltip" data-placement="top" title="Watchers"><span class="octicon octicon-eye"></span> <span id="watch-count"></span></a>
+		</div>
+	</div-->
 	<script>
 		function get(name){
 			if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search)) return decodeURIComponent(name[1]);

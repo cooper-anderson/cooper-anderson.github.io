@@ -19,7 +19,9 @@ $.ajax({
 });
 
 function main() {
-	for (let repo in repos) {
-		$("#repos").append(`<div class="repo-card" data-user="${repos[repo].owner.login}" data-repo="${repo}"></div>`);
+	for (let i = 0; i < 1; i++) {
+		for (let repo in repos) {
+			repoCard(user=repos[repo].owner.login, repo=repo, func=function(data) {$("#repos").append(data);});
+		}
 	}
 }
