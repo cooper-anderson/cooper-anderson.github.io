@@ -9,6 +9,7 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		appDir: "internal",
 		prerender: {
 			default: true
 		}

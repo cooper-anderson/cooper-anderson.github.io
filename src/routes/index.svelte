@@ -1,7 +1,8 @@
-<script lang="ts">
-	import Cps from "../components/cps.svelte";
-</script>
-
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="/">this page</a> to view my website. hi tom.</p>
-<Cps />
+<main>
+	<h1>Welcome to my Website!</h1>
+	<p>This is a work-in-progress</p>
+	<p>
+		In the meantime, out my
+		<a href="https://github.com/cooperuser">GitHub</a>
+	</p>
+</main>
